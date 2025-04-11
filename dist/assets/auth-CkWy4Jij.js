@@ -1,0 +1,1 @@
+async function e(){try{return(await(await fetch("http://localhost/youthsthought/backend/check_auth.php",{method:"GET",credentials:"include"})).json()).status==="success"?{status:"success"}:{status:"error"}}catch(t){return console.error("Error checking authentication:",t),{status:"error"}}}export{e as c};
